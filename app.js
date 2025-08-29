@@ -117,9 +117,9 @@ passport.deserializeUser(User.deserializeUser());
 
 
 app.get("/", (req, res) => {
-    res.send("Welcome to TravelNest 🚀");
-    // or redirect to listings
-    // res.redirect("/listings");
+    // res.send("Welcome to TravelNest 🚀");
+    
+    res.redirect("/listings");
 });
 
   
