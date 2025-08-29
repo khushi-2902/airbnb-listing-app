@@ -112,6 +112,16 @@ passport.deserializeUser(User.deserializeUser());
 // {
 //   res.send("hi i am root");
 // })
+
+
+
+
+app.get("/", (req, res) => {
+    res.send("Welcome to TravelNest 🚀");
+    // or redirect to listings
+    // res.redirect("/listings");
+});
+
   
 app.use((req,res,next)=>
 {
